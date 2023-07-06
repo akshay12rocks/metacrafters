@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
+contract ifElseAgeEligibility {
+    function age(uint256 x) public pure returns (uint256) {
+        if (x > 18) {
+            return (1);
+        } else if (x < 18) {
+            return (2);
+        } else {
+            return (3);
+        }
+    }
+}
