@@ -1,0 +1,36 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract loops {
+    uint public counter;
+
+    function find(uint _num) public  returns (uint256) {
+        while (counter < _num) {
+            counter++;
+        }
+    }
+}
+
+
+
+//[vm]from: 0x5B3...eddC4to: loops.find(uint256) 0xd91...39138value: 0 weidata: 0x3e5...003e8logs: 0hash: 0x609...3b940
+status	true Transaction mined and execution succeed
+transaction hash	0x6093352b5294532cef2073d89814b6408543b2b21040b49cdc276d07b9d3b940
+block hash	0x780e8a8c53e65cb2eccf85f8b0655a566b5744f85a7f81064957b78aef3fd732
+block number	4
+from	0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+to	loops.find(uint256) 0xd9145CCE52D386f254917e481eB44e9943F39138
+gas	27503 gas
+transaction cost	23915 gas 
+execution cost	2699 gas 
+input	0x3e5...003e8
+decoded input	{
+	"uint256 _num": "1000"
+}
+decoded output	{
+	"0": "uint256: 0"
+}
+logs	[]
+val	0 wei
+call to loops.counter
+call to loops.counter errored: base fee exceeds gas limit (vm hf=shanghai -> block number=5 hash=0x30167edd42720f6bcc69c419db23d72625bc819fe21b2fb464a9083aae084b40 hf=shanghai baseFeePerGas=1 txs=1 uncles=0 -> tx type=2 hash=0xd4031ec6e01aaba66b3c59cec129c44d75685ae79f50f87d3a5df21251e43254 nonce=6 value=0 signed=true hf=shanghai maxFeePerGas=1 maxPriorityFeePerGas=1)
